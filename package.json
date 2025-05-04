@@ -1,0 +1,24 @@
+{
+  "name": "astro-blog-tutorial",
+  "type": "module",
+  "version": "0.0.1",
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.7.9",
+    "astro-icon": "^1.1.5",
+    "postcss": "^8.5.3",
+    "postcss-preset-env": "^10.1.6",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.87.0"
+  }
+}
