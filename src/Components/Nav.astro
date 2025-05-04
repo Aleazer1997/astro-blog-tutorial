@@ -17,13 +17,13 @@ import Link from './Link.astro';
                 navData.map(item => (
                    <Link text={item.name} href={item.path} style="secondary" isFilled={false}
                    data-navlink 
-                   icon={{
-                    name: "ic:baseline-add-photo-alternate",
-                    side: "left"
-                   }}
                    />
                 ))
             }
         </ul>
     </div>
 </nav>
+
+<script>
+    import "../js/nav.js"
+</script>
