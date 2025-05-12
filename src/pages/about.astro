@@ -1,20 +1,31 @@
 ---
-//components imports
-import Link from "../Components/Link.astro";
+// component imports
+import Link from "../components/Link.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-
-
 ---
 
-<MainLayout title="My Astro Blog", description="My About page">
-	<section class="container about" aria-label="About me">
-		<img src="/images/headshot.jpg" alt="My head shot" width="200" height="330">
-		<div class="content">
-			<h1 class="h1">
-				My Blog
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque id fugit atque! Amet adipisci nobis perspiciatis dolore hic aliquid praesentium ex, consequuntur aperiam odit commodi. Asperiores illo non eum atque.</p>
-				<Link href="mailto:chris@codinginpublic.dev" style="primary" text="Contact me"/>
-			</h1>
-		</div>
-	</section>
+<MainLayout title="About" description="My About Page">
+  <section class="container about" aria-label="About Me">
+    <img
+      src="/images/headshot.jpg"
+      alt="My headshot"
+      width="200"
+      height="330"
+    />
+    <div class="content">
+      <h1 class="h1">My Blog</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quidem
+        tempora beatae mollitia architecto optio sapiente repellendus natus.
+        Minima reiciendis voluptatibus ratione quos exercitationem expedita
+        commodi doloremque. Repellendus nulla nihil animi fuga voluptas amet
+        fugit eveniet voluptates ab labore. Magnam.
+      </p>
+      <Link
+        href="mailto:chris@codinginpublic.dev"
+        style="primary"
+        text="Contact Me"
+      />
+    </div>
+  </section>
 </MainLayout>
