@@ -1,6 +1,6 @@
 ---
 // library imports
-import { Image } from "@astrojs/image/components";
+import { Image } from 'astro:assets';
 
 // utils imports
 import { slugify, formatDate } from "../js/utils";
@@ -28,7 +28,6 @@ const { category, title, author, date, image } = Astro.props;
     format="avif"
     fit="cover"
     quality={80}
-    aspectRatio="5:2"
     class="hero-image"
   />
 </header>
