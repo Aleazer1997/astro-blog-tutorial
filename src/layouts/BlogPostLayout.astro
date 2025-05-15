@@ -1,9 +1,9 @@
 ---
 // component import
-import PostHeader from "../components/PostHeader.astro";
-import CategoryCloud from "../components/CategoryCloud.astro";
+import PostHeader from "../Components/PostHeader.astro";
+import CategoryCloud from "../Components/CategoryCloud.astro";
 import MainLayout from "./MainLayout.astro";
-import RelatedPosts from "../components/RelatedPosts.astro";
+import RelatedPosts from "../Components/RelatedPosts.astro";
 
 // util imports
 import { formatBlogPosts } from "../js/utils";
@@ -17,7 +17,7 @@ const formattedPosts = formatBlogPosts(allPosts, {
 });
 const relatedPosts = formattedPosts
   .filter(
-    (post) =>
+    (post:any) =>
       post.frontmatter.category.toLowerCase() === category.toLowerCase() &&
       post.frontmatter.title !== title
   )
